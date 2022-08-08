@@ -1,3 +1,5 @@
+--Basic sql
+
 1.select first_name ||' '|| last_name as employee_name, salary 
   from employees;
   

@@ -242,7 +242,7 @@
 	on (dept01.department_id=dept02.department_id)
 	when matched then update set dept01.department_name=dept02.department_name,dept01.location_id=dept01.location_id
 	when not matched then insert (department_id,department_name,location_id,manager_id) values (dept02.department_id,dept02.department_name,dept02.location_id,dept02.manager_id);
---------------------------------
+
 
 --pl/sql
 
